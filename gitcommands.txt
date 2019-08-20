@@ -1,0 +1,15 @@
+
+  #make new keychainm delete old one
+  git credential-osxkeychain erase
+    host=github.com
+    protocol=https
+
+  #get new one from developer settings in github under profile
+
+#Start over
+echo "# Tracking_Website" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/blondesean/Tracking_Website.git
+git push -u origin master
