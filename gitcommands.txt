@@ -5,6 +5,8 @@
     protocol=https
 
   #get new one from developer settings in github under profile
+  #Use this website to set default authentication
+  #https://help.github.com/en/articles/changing-a-remotes-urlß
 
 #Start over
 echo "# Tracking_Website" >> README.md
