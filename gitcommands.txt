@@ -14,4 +14,26 @@ git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/blondesean/Tracking_Website.git
-git push -u origin master
+git push -u origin 
+
+
+#installing apache
+sudo apt update
+sudo apt upgrade
+sudo apt install mariadb-server
+#sudo mysql_secure_installation
+sudo mysql -u root -p
+create database tracking_website;
+use tracking_website;
+
+create table sample (
+    -> userNo int,
+    -> LastName varchar(255),
+    -> FirstName varchar(255),
+    -> favNo int
+    -> );
+
+Describe sample;
+
+INSERT INTO sample (userNo, LastName, FirstName, favNo)
+VALUES (0, "Test", "Case", 1337);
