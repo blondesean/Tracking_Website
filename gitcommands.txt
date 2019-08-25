@@ -37,3 +37,9 @@ Describe sample;
 
 INSERT INTO sample (userNo, LastName, FirstName, favNo)
 VALUES (0, "Test", "Case", 1337);
+
+Had to change the php.ini file to enable mysqli, uncomment 
+extension=mysql.sp
+extension=mysqli.so
+sudo apt-get install php5-mysql
+sudo service apache2 restart

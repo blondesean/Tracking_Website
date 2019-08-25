@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home Page (you can't see this)</title>
-
+<title>Tracking Practice Template Page</title>
 
 <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -19,9 +18,9 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<h1>Hosted by Sean</h1>
-<p>Test Home Page</p>
-<p>Now with GA code</p>
+<!-- Headings -->
+<h1>Page Template</h1>
+<p>This page includes code necessary on new pages</p>
 
 </body>
 </html>
