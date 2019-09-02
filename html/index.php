@@ -11,24 +11,17 @@ error_reporting(E_ALL);
 <head>
 <title>Tracking Practice Page</title>
 
-<!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NWGHQ4D');</script>
-<!-- End Google Tag Manager -->
+<!-- GTM Header File -->
+<?php include("./php/Page Pieces/GTM_Header.html"); ?>
+
 </head>
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWGHQ4D"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<!-- GTM Body Container -->
+<?php include("./php/Page Pieces/GTM_Body.html"); ?>
 
-<!-- Headings -->
-<h1>Test Home Page</h1>
-<h2>Hosted by Sean</h2>
+<!-- Insert header -->
+<?php include("./php/Page Pieces/header.html"); ?>
 
 <!-- List of Features -->
 <p>Here is where I am going to list features of the site.
@@ -39,16 +32,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <ul>
       <li>Global Site Tag GA</li>
       <li>Fires on all page views</li>
+      <li>php Header and Body containers for easy updates</li>
     </ul>
   <li>php code</li>
   <li>Link to another page</li>
+  <li>php Header and Footer</li>
+  <li>Page redirect to Google</li>
 </ul>
 
 <!-- Content and Main Body -->
 <p>Here is where we will test different text. </br></p>
 
 <!-- Link to another page -->
-<p>Click <a href="./Other_Pages/Page_Template.php">here</a> to go to another page </p>
+<p>Click <a href="./Other_Pages/Page_Template.php">here</a> to go to another page.</p>
 
 <!-- Link to an imagine -->
 <p>Here is a great image of a moth. Thanks <a href="https://www.scmp.com/magazines/post-magazine/long-reads/article/3003821/insect-apocalypse-coming-study-hong-kong-moth">Post Magazine</a>.</p>
@@ -90,6 +86,12 @@ Favorite Number: <input type = "number" name ="favoriteNo" value = 1></br>
 </form>
 
 <p>Clicking the "Submit" button will record your information in the database. You will be able to see it showing up in the results of the query above.</p>
+
+<p>Testing redirecting pages</br>
+Click <a href="./Other_Pages/Redirect_Page.php">here</a> to test out a redirect.</p>
+
+<!-- Insert footer -->
+<?php include("./php/Page Pieces/footer.html"); ?>
 
 </body>
 </html>
